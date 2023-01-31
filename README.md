@@ -26,3 +26,5 @@ Very simple project. Im new to git and frameworks. I upload daily my projects.
 - Sending information about the tasks via json using api routes not the web routes
 - Some artisan commands to mark all tasks as done etc
 - Pagination?
+- Worth trying to develop some frontend skills in this framework. For example, add markdown tag (<md>) to project and display tasks using this...
+- Also worth developing... some better understanding and some more skills at frontend area of the project
