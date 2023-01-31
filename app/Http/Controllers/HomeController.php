@@ -16,8 +16,8 @@ class HomeController extends Controller
     {
         $tasks = Task::orderBy('created_at', 'asc')->get();
  
-    return view('welcome', [
-        'tasks' => $tasks
+            return view('welcome', [
+                'tasks' => $tasks
     ]);
     }
 }
