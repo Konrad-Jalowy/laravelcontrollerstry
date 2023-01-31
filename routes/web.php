@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\TaskController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,3 +16,6 @@ use App\Http\Controllers\HomeController;
 */
 
 Route::get('/', HomeController::class)->name('home');
+Route::get('/task', [TaskController::class, 'showAddForm'])->name('addtaskform');
+Route::post('/task', [TaskController::class, 'postTask'])->name('posttask');
+Route::delete('/task/{task}', [TaskController::class, 'deleteTask'] )->name('deletetask');
