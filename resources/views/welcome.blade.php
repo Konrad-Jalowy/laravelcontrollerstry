@@ -17,7 +17,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
             <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="/">Home</a>
+            <a class="nav-link active" aria-current="page" href="{{route('home')}}">Home</a>
             </li>
             <li class="nav-item">
             <a class="nav-link" href="{{route('addtaskform')}}">Post</a>
@@ -51,7 +51,7 @@
                                 </td>
  
                                 <td>
-                                <form action="{{ url('task/'.$task->id) }}" method="POST">
+                                <form action="{{ route('deletetask', $task->id) }}" method="POST">
                                     {{ csrf_field() }}
                                     {{ method_field('DELETE') }}
                         

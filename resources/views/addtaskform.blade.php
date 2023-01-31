@@ -1,4 +1,4 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
         <meta charset="utf-8">
@@ -29,7 +29,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
             <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="/">Home</a>
+            <a class="nav-link active" aria-current="page" href="{{route('home')}}">Home</a>
             </li>
             <li class="nav-item">
             <a class="nav-link" href="{{route('addtaskform')}}">Post</a>
@@ -38,7 +38,7 @@
         </div>
     </div>
     </nav>
-    <form action="{{ url('task') }}" method="POST" class="form-horizontal">
+    <form action="{{ route('posttask') }}" method="POST" class="form-horizontal">
             {{ csrf_field() }}
  
             <!-- Task Name -->
