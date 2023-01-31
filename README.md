@@ -14,3 +14,15 @@ Very simple project. Im new to git and frameworks. I upload daily my projects.
 - Using vite properly to get bootstrap instead of using CDN
 - Not creating auth scaffolding for project with no user account functionality
 - Creating seeder and factory 
+- Using Controllers instead of routes with callback
+- Using invokable controller
+- Using named routes instead of urls
+
+## TODO
+- Editing tasks
+- Maybe trying resource controller?
+- Ability to mark task as done
+- Better code organization
+- Sending information about the tasks via json using api routes not the web routes
+- Some artisan commands to mark all tasks as done etc
+- Pagination?
